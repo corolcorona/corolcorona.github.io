@@ -103,19 +103,17 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Hello World</h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >mac系统搭建各种开发环境</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+                <p>1.通过nom安装hexo(之前Node.js和Git都安装过)<br>npm install hexo-cli -g<br>–/usr/local/bin/hexo</p>
+<p>2.cd到一个指定的路径，执行<br>–cd /Users/corolcorona/Documents/blog<br>hexo init blog<br>进行初始化，blog是你建立的文件夹名称</p>
+<p>3.cd blog<br>执行<br>hexo s<br>可以进入网址<a href="http://localhost:4000查看" target="_blank" rel="external">http://localhost:4000查看</a></p>
+<p>4.进入Github，新建仓库，名为：用户名.github.io</p>
+<p>5.终端cd到blog文件夹下，vim打开_config.yml，修改最后<br>deploy:<br>    type: git<br>    repository: <a href="https://github.com/用户名/用户名.github.io" target="_blank" rel="external">https://github.com/用户名/用户名.github.io</a><br>    branch: master</p>
+<p>6.在blog文件夹先执行：npm install hexo-deployer-git —save<br>再执行部署命令：<br>hexo generate        或者：hexo g<br>hexo deploy          或者：hexo d<br>打开用户名.github.io，查看</p>
+<p>7.每次新增文章或者更换主题后，都需要执行<br>hexo clean           //清除缓存文件 (db.json) 和已生成的静态文件 (public)<br>hexo g             //生成缓存和静态文件<br>hexo d             //重新部署到服务器</p>
 
             </div>
 
@@ -178,8 +176,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2017/08/20/hello-world/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/2017/08/20/hello-world/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2017/08/21/Mac上用Hexo搭建GitHub个人博客/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/08/21/Mac上用Hexo搭建GitHub个人博客/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
