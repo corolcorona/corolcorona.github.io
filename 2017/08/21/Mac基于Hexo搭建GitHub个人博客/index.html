@@ -108,18 +108,19 @@
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
                 <p>Hexo是一个基于Node.js的静态博客框架,只包含HTML, CSS 和 Javascrip；无数据库，无动态数据，无需通入过多精力维护；</p>
-<p>一.安装过程（最新安装过程以官网为准<a href="https://hexo.io）" target="_blank" rel="external">https://hexo.io）</a><br>1.通过npm安装hexo(之前Node.js和Git都安装过)<br>npm install hexo-cli -g</p>
-<p>2.cd到一个指定的路径，执行<br>hexo init blog<br>进行初始化，blog是你建立的项目名称，会生成以下文件<br>source：博客资源文件夹<br>source/_drafts：草稿文件夹<br>source/_posts：文章文件夹<br>themes：存放主题的文件夹<br>themes/landscape：默认的主题<br>_config.yml：配置文件</p>
-<p>3.cd到blog文件夹下<br>执行<br>hexo s<br>可以进入网址<a href="http://localhost:4000查看" target="_blank" rel="external">http://localhost:4000查看</a></p>
-<p>二.进入Github，新建仓库，名为：用户名.github.io</p>
-<p>三.配置hexo<br>1.cd到blog文件夹下，vim打开_config.yml，修改最后<br>deploy:<br>    type: git<br>    repository: <a href="https://github.com/用户名/用户名.github.io" target="_blank" rel="external">https://github.com/用户名/用户名.github.io</a><br>    branch: master</p>
-<p>2.在blog文件夹先执行：npm install hexo-deployer-git —save<br>再执行部署命令：<br>hexo generate        或者：hexo g<br>hexo deploy          或者：hexo d<br>打开用户名.github.io，查看</p>
-<p>四.新建博客<br>hexo new 博客名        //新建博客<br>hexo clean           //清除缓存<br>hexo g                                  //生成缓存和静态文件<br>hexo d                                 //重新部署到服务器</p>
-<p>五.修改主题<br>如果要修改主题，只需要将主题文件clone到themes目录下，并修改_config.yml配置文件即可<br>可以去主题官网<a href="https://hexo.io/themes/，每个主题都有相关的GitHub和操作文档。" target="_blank" rel="external">https://hexo.io/themes/，每个主题都有相关的GitHub和操作文档。</a></p>
-<p>六.添加分类<br>1.hexo new page categories</p>
-<h2 id="2-根据执行后提示的路径，找到index-md这个文件，修改如下"><a href="#2-根据执行后提示的路径，找到index-md这个文件，修改如下" class="headerlink" title="2.根据执行后提示的路径，找到index.md这个文件，修改如下"></a>2.根据执行后提示的路径，找到index.md这个文件，修改如下</h2><p>title: 文章分类<br>date: 2017-05-27 13:47:40</p>
-<h2 id="type-“categories”"><a href="#type-“categories”" class="headerlink" title="type: “categories”"></a>type: “categories”</h2><h2 id="3-给文章添加“categories”属性"><a href="#3-给文章添加“categories”属性" class="headerlink" title="3.给文章添加“categories”属性"></a>3.给文章添加“categories”属性</h2><p>title: Mac上用Hexo搭建GitHub个人博客<br>date: 2017-05-26 12:12:57<br>categories: </p>
-<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="- 环境搭建"></a>- 环境搭建</h2>
+<p>###一.安装过程（最新安装过程以官网为准<a href="https://hexo.io）" target="_blank" rel="external">https://hexo.io）</a><br>1.通过npm安装hexo(之前Node.js和Git都安装过)<br>npm install hexo-cli -g</p>
+<p>2.cd到一个指定的路径，执行<br>‘hexo init blog’<br>进行初始化，blog是你建立的项目名称，会生成以下文件<br>source：博客资源文件夹<br>source/_drafts：草稿文件夹<br>source/_posts：文章文件夹<br>themes：存放主题的文件夹<br>themes/landscape：默认的主题<br>_config.yml：配置文件</p>
+<p>3.cd到blog文件夹下<br>执行<br>‘hexo s’<br>可以进入网址<a href="http://localhost:4000查看" target="_blank" rel="external">http://localhost:4000查看</a></p>
+<p>###二.进入Github，新建仓库，名为：用户名.github.io</p>
+<p>###三.配置hexo<br>1.cd到blog文件夹下，vim打开_config.yml，修改最后<br>deploy:<br>    type: git<br>    repository: <a href="https://github.com/用户名/用户名.github.io" target="_blank" rel="external">https://github.com/用户名/用户名.github.io</a><br>    branch: master</p>
+<p>2.在blog文件夹先执行：<br>’npm install hexo-deployer-git —save’<br>再执行部署命令：<br>hexo generate        或者：hexo g<br>hexo deploy          或者：hexo d<br>打开用户名.github.io，查看</p>
+<p>###四.新建博客<br>‘hexo new 博客名        //新建博客<br>hexo clean           //清除缓存<br>hexo g                                  //生成缓存和静态文件<br>hexo d                                 //重新部署到服务器’</p>
+<p>###五.修改主题<br>如果要修改主题，只需要将主题文件clone到themes目录下，并修改_config.yml配置文件即可<br>可以去主题官网<a href="https://hexo.io/themes/，每个主题都有相关的GitHub和操作文档。" target="_blank" rel="external">https://hexo.io/themes/，每个主题都有相关的GitHub和操作文档。</a></p>
+<p>###六.添加分类<br>1.’hexo new page categories’<br>2.根据执行后提示的路径，找到index.md这个文件，修改如下<br>‘<br>title: 文章分类<br>date: 2017-05-27 13:47:40<br>type: “categories”<br>‘<br>3.给文章添加“categories”属性<br>‘<br>title: Mac上用Hexo搭建GitHub个人博客<br>date: 2017-05-26 12:12:57<br>categories: </p>
+<ul>
+<li>环境搭建<br>‘</li>
+</ul>
+
             </div>
 
             <!-- Post Comments -->
